@@ -304,7 +304,7 @@ object Assembly {
         "spark-" + v + "-yarn-shuffle.jar"
       } else {
         mName + "-" + v + "-hadoop" +
-          Option(System.getProperty("hadoop.version")).getOrElse("1.0.4") + ".jar"
+          Option(System.getProperty("hadoop.version")).getOrElse("1.2.1") + ".jar"
       }
     },
     mergeStrategy in assembly := {
